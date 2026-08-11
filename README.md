@@ -45,7 +45,6 @@ Spring Data JPA, Hibernate, and MySQL.
 
 The application follows a layered backend architecture:
 
-```text
 Client
   │
   ▼
@@ -64,7 +63,6 @@ MySQL Database
 
 ## 📁 Project Structure
 
-```text
 src/
 └── main/
     ├── java/
