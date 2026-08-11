@@ -59,7 +59,7 @@ Repository Layer
   ▼
 MySQL Database
 
-📁 Project Structure
+## 📁 Project Structure
 src/
 └── main/
     ├── java/
@@ -73,7 +73,7 @@ src/
     └── resources/
         └── application.properties
 
-📌 API Endpoints
+## 📌 API Endpoints
 
 Movies
 Method	Endpoint	Description
@@ -91,7 +91,7 @@ GET	/api/bookings/{id}	Get booking by ID
 
 Additional REST APIs are available for cities, theaters, screens, seats, shows, and users.
 
-🗄️ Database
+## 🗄️ Database
 
 The application uses MySQL for persistent data storage.
 
@@ -107,7 +107,7 @@ Booking
 
 Spring Data JPA and Hibernate are used for database interaction and object-relational mapping.
 
-⚙️ How to Run
+## ⚙️ How to Run
 Prerequisites
 
 Make sure the following are installed:
@@ -169,7 +169,7 @@ POST
 PUT
 DELETE
 
-📚 Key Learning Outcomes
+## 📚 Key Learning Outcomes
 
 Through this project, I practiced:
 
@@ -184,7 +184,7 @@ API testing with Postman
 Maven dependency management
 Git and GitHub
 
-🔮 Future Improvements
+## 🔮 Future Improvements
 
 Spring Security
 JWT-based authentication
@@ -195,7 +195,7 @@ Swagger / OpenAPI documentation
 Payment integration
 Docker support
 
-👨‍💻 Author
+## 👨‍💻 Author
 
 Nikil Chauhan
 
