@@ -60,7 +60,6 @@ Repository Layer
   ▼
 MySQL Database
 
-```markdown
 ---
 
 ## 📁 Project Structure
@@ -78,7 +77,9 @@ src/
     │
     └── resources/
         └── application.properties
+
 📌 API Endpoints
+
 Movies
 Method	Endpoint	Description
 POST	/api/movies	Create a movie
@@ -86,11 +87,13 @@ GET	/api/movies	Get all movies
 GET	/api/movies/{id}	Get movie by ID
 PUT	/api/movies/{id}	Update a movie
 DELETE	/api/movies/{id}	Delete a movie
+
 Bookings
 Method	Endpoint	Description
 POST	/api/bookings	Create a booking
 GET	/api/bookings	Get all bookings
 GET	/api/bookings/{id}	Get booking by ID
+
 🗄️ Database
 
 The application uses MySQL for persistent data storage.
@@ -104,6 +107,7 @@ Seat
 Show
 User
 Booking
+
 ⚙️ How to Run
 Prerequisites
 Java JDK
@@ -111,10 +115,13 @@ Maven
 MySQL
 Git
 Postman
+
 1. Clone the Repository
 git clone https://github.com/Nikil-Chauhan/bookmyshow-backend.git
+
 2. Create the Database
 CREATE DATABASE bookmyshow;
+
 3. Configure Database
 
 Update:
@@ -129,8 +136,10 @@ spring.datasource.password=your_password
 
 spring.jpa.hibernate.ddl-auto=update
 spring.jpa.show-sql=true
+
 4. Build the Project
 mvn clean install
+
 5. Run the Application
 mvn spring-boot:run
 
@@ -144,6 +153,7 @@ The REST APIs can be tested using Postman.
 Example:
 
 GET http://localhost:8080/api/movies
+
 📚 Key Learning Outcomes
 REST API development with Spring Boot
 CRUD operations
@@ -155,6 +165,7 @@ DTO-based API communication
 API testing with Postman
 Maven dependency management
 Git and GitHub
+
 🔮 Future Improvements
 Spring Security
 JWT authentication
