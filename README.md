@@ -60,3 +60,116 @@ Repository Layer
   ▼
 MySQL Database
 
+```markdown
+---
+
+## 📁 Project Structure
+
+```text
+src/
+└── main/
+    ├── java/
+    │   └── com/cfs/bms/
+    │       ├── controller/
+    │       ├── service/
+    │       ├── repository/
+    │       ├── entity/
+    │       └── dto/
+    │
+    └── resources/
+        └── application.properties
+📌 API Endpoints
+Movies
+Method	Endpoint	Description
+POST	/api/movies	Create a movie
+GET	/api/movies	Get all movies
+GET	/api/movies/{id}	Get movie by ID
+PUT	/api/movies/{id}	Update a movie
+DELETE	/api/movies/{id}	Delete a movie
+Bookings
+Method	Endpoint	Description
+POST	/api/bookings	Create a booking
+GET	/api/bookings	Get all bookings
+GET	/api/bookings/{id}	Get booking by ID
+🗄️ Database
+
+The application uses MySQL for persistent data storage.
+
+Main Entities
+Movie
+City
+Theater
+Screen
+Seat
+Show
+User
+Booking
+⚙️ How to Run
+Prerequisites
+Java JDK
+Maven
+MySQL
+Git
+Postman
+1. Clone the Repository
+git clone https://github.com/Nikil-Chauhan/bookmyshow-backend.git
+2. Create the Database
+CREATE DATABASE bookmyshow;
+3. Configure Database
+
+Update:
+
+src/main/resources/application.properties
+
+Example:
+
+spring.datasource.url=jdbc:mysql://localhost:3306/bookmyshow
+spring.datasource.username=your_username
+spring.datasource.password=your_password
+
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.show-sql=true
+4. Build the Project
+mvn clean install
+5. Run the Application
+mvn spring-boot:run
+
+The application will run on:
+
+http://localhost:8080
+🧪 API Testing
+
+The REST APIs can be tested using Postman.
+
+Example:
+
+GET http://localhost:8080/api/movies
+📚 Key Learning Outcomes
+REST API development with Spring Boot
+CRUD operations
+Spring Data JPA
+Hibernate ORM
+MySQL integration
+Layered architecture
+DTO-based API communication
+API testing with Postman
+Maven dependency management
+Git and GitHub
+🔮 Future Improvements
+Spring Security
+JWT authentication
+Role-based authorization
+Global exception handling
+Input validation
+Swagger / OpenAPI documentation
+Payment integration
+Docker support
+
+👨‍💻 Author
+
+Nikil Chauhan
+
+Java Backend Developer
+
+GitHub: https://github.com/Nikil-Chauhan/Nikil-Chauhan
+LinkedIn: https://www.linkedin.com/in/nikil-chauhan-5972b625b/
