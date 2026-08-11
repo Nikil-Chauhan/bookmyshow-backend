@@ -28,7 +28,7 @@ Spring Data JPA, Hibernate, and MySQL.
 ## 🛠️ Tech Stack
 
 | Technology | Usage |
-|------------|-------|
+|---|---|
 | Java | Backend development |
 | Spring Boot | Application framework |
 | Spring MVC | REST API development |
@@ -43,7 +43,7 @@ Spring Data JPA, Hibernate, and MySQL.
 
 ## 🏗️ Architecture
 
-The application follows a layered architecture:
+The application follows a layered backend architecture:
 
 ```text
 Client
@@ -59,3 +59,4 @@ Repository Layer
   │
   ▼
 MySQL Database
+
