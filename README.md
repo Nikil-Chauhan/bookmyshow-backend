@@ -1,11 +1,10 @@
 # BookMyShow – Movie Ticket Booking Backend
 
 A backend-focused movie ticket booking system built with **Java and Spring Boot**.
-The application provides REST APIs for managing movies, cities, theaters, screens,
-seats, shows, users, and bookings.
 
-The project demonstrates a layered backend architecture using Spring Boot,
-Spring Data JPA, Hibernate, and MySQL.
+The application provides REST APIs for managing movies, cities, theaters, screens, seats, shows, users, and bookings.
+
+The project demonstrates a layered backend architecture using **Spring Boot, Spring Data JPA, Hibernate, and MySQL**.
 
 ---
 
@@ -45,6 +44,7 @@ Spring Data JPA, Hibernate, and MySQL.
 
 The application follows a layered backend architecture:
 
+```text
 Client
   │
   ▼
@@ -59,10 +59,7 @@ Repository Layer
   ▼
 MySQL Database
 
----
-
-## 📁 Project Structure
-
+📁 Project Structure
 src/
 └── main/
     ├── java/
@@ -92,6 +89,8 @@ POST	/api/bookings	Create a booking
 GET	/api/bookings	Get all bookings
 GET	/api/bookings/{id}	Get booking by ID
 
+Additional REST APIs are available for cities, theaters, screens, seats, shows, and users.
+
 🗄️ Database
 
 The application uses MySQL for persistent data storage.
@@ -106,8 +105,13 @@ Show
 User
 Booking
 
+Spring Data JPA and Hibernate are used for database interaction and object-relational mapping.
+
 ⚙️ How to Run
 Prerequisites
+
+Make sure the following are installed:
+
 Java JDK
 Maven
 MySQL
@@ -117,16 +121,22 @@ Postman
 1. Clone the Repository
 git clone https://github.com/Nikil-Chauhan/bookmyshow-backend.git
 
-2. Create the Database
+2. Navigate to the Project
+cd bookmyshow-backend
+
+3. Create the Database
+
+Create a MySQL database:
+
 CREATE DATABASE bookmyshow;
 
-3. Configure Database
+4. Configure Database Connection
 
-Update:
+Update the following file:
 
 src/main/resources/application.properties
 
-Example:
+Example configuration:
 
 spring.datasource.url=jdbc:mysql://localhost:3306/bookmyshow
 spring.datasource.username=your_username
@@ -135,10 +145,10 @@ spring.datasource.password=your_password
 spring.jpa.hibernate.ddl-auto=update
 spring.jpa.show-sql=true
 
-4. Build the Project
+5. Build the Project
 mvn clean install
 
-5. Run the Application
+6. Run the Application
 mvn spring-boot:run
 
 The application will run on:
@@ -152,21 +162,32 @@ Example:
 
 GET http://localhost:8080/api/movies
 
+The API supports standard HTTP operations:
+
+GET
+POST
+PUT
+DELETE
+
 📚 Key Learning Outcomes
+
+Through this project, I practiced:
+
 REST API development with Spring Boot
 CRUD operations
 Spring Data JPA
 Hibernate ORM
 MySQL integration
-Layered architecture
+Layered backend architecture
 DTO-based API communication
 API testing with Postman
 Maven dependency management
 Git and GitHub
 
 🔮 Future Improvements
+
 Spring Security
-JWT authentication
+JWT-based authentication
 Role-based authorization
 Global exception handling
 Input validation
