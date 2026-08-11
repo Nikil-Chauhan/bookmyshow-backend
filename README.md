@@ -44,7 +44,6 @@ The project demonstrates a layered backend architecture using **Spring Boot, Spr
 
 The application follows a layered backend architecture:
 
-```text
 Client
   │
   ▼
@@ -59,6 +58,8 @@ Repository Layer
   ▼
 MySQL Database
 
+---
+
 ## 📁 Project Structure
 src/
 └── main/
@@ -72,6 +73,8 @@ src/
     │
     └── resources/
         └── application.properties
+
+---
 
 ## 📌 API Endpoints
 
@@ -91,6 +94,8 @@ GET	/api/bookings/{id}	Get booking by ID
 
 Additional REST APIs are available for cities, theaters, screens, seats, shows, and users.
 
+---
+
 ## 🗄️ Database
 
 The application uses MySQL for persistent data storage.
@@ -106,6 +111,8 @@ User
 Booking
 
 Spring Data JPA and Hibernate are used for database interaction and object-relational mapping.
+
+---
 
 ## ⚙️ How to Run
 Prerequisites
@@ -169,6 +176,8 @@ POST
 PUT
 DELETE
 
+---
+
 ## 📚 Key Learning Outcomes
 
 Through this project, I practiced:
@@ -184,6 +193,8 @@ API testing with Postman
 Maven dependency management
 Git and GitHub
 
+---
+
 ## 🔮 Future Improvements
 
 Spring Security
@@ -194,6 +205,8 @@ Input validation
 Swagger / OpenAPI documentation
 Payment integration
 Docker support
+
+---
 
 ## 👨‍💻 Author
 
