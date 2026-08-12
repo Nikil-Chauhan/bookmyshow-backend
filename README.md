@@ -86,20 +86,23 @@ src/
 ### Movies
 
 | Method | Endpoint | Description |
-|---|---|---|
-| `POST` | `/api/movies` | Create a movie |
-| `GET` | `/api/movies` | Get all movies |
-| `GET` | `/api/movies/{id}` | Get movie by ID |
-| `PUT` | `/api/movies/{id}` | Update a movie |
-| `DELETE` | `/api/movies/{id}` | Delete a movie |
+|--------|----------|-------------|
+| POST | `/api/movies` | Add a new movie |
+| GET | `/api/movies` | Get all movies |
+| GET | `/api/movies/{id}` | Get movie by ID |
+| GET | `/api/movies/search?title={title}` | Search movies by title |
+| GET | `/api/movies/genre/{genre}` | Get movies by genre |
+| GET | `/api/movies/language/{language}` | Get movies by language |
 
 ### Bookings
 
 | Method | Endpoint | Description |
-|---|---|---|
-| `POST` | `/api/bookings` | Create a booking |
-| `GET` | `/api/bookings` | Get all bookings |
-| `GET` | `/api/bookings/{id}` | Get booking by ID |
+|--------|----------|-------------|
+| POST | `/api/bookings` | Create a new booking |
+| GET | `/api/bookings/{id}` | Get booking by ID |
+| GET | `/api/bookings/user/{userId}` | Get all bookings for a user |
+| PUT | `/api/bookings/{id}/cancel` | Cancel a booking |
+| GET | `/api/bookings/show/{showId}/available-seats` | Get available seats for a show |
 
 Additional REST APIs are available for cities, theaters, screens, seats, shows, and users.
 
