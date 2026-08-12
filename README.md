@@ -78,7 +78,6 @@ src/
     │
     └── resources/
         └── application.properties
-
 ```
 ---
 
