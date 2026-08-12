@@ -64,6 +64,8 @@ MySQL Database
 ---
 
 ## 📁 Project Structure
+
+```text
 src/
 └── main/
     ├── java/
@@ -76,24 +78,28 @@ src/
     │
     └── resources/
         └── application.properties
-
+```
 ---
 
 ## 📌 API Endpoints
 
-Movies
-Method	Endpoint	Description
-POST	/api/movies	Create a movie
-GET	/api/movies	Get all movies
-GET	/api/movies/{id}	Get movie by ID
-PUT	/api/movies/{id}	Update a movie
-DELETE	/api/movies/{id}	Delete a movie
+### Movies
 
-Bookings
-Method	Endpoint	Description
-POST	/api/bookings	Create a booking
-GET	/api/bookings	Get all bookings
-GET	/api/bookings/{id}	Get booking by ID
+| Method | Endpoint | Description |
+|---|---|---|
+| `POST` | `/api/movies` | Create a movie |
+| `GET` | `/api/movies` | Get all movies |
+| `GET` | `/api/movies/{id}` | Get movie by ID |
+| `PUT` | `/api/movies/{id}` | Update a movie |
+| `DELETE` | `/api/movies/{id}` | Delete a movie |
+
+### Bookings
+
+| Method | Endpoint | Description |
+|---|---|---|
+| `POST` | `/api/bookings` | Create a booking |
+| `GET` | `/api/bookings` | Get all bookings |
+| `GET` | `/api/bookings/{id}` | Get booking by ID |
 
 Additional REST APIs are available for cities, theaters, screens, seats, shows, and users.
 
