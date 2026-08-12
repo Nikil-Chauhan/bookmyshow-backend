@@ -78,7 +78,7 @@ src/
     │
     └── resources/
         └── application.properties
-```
+
 ---
 
 ## 📌 API Endpoints
