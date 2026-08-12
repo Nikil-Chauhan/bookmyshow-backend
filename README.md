@@ -44,7 +44,7 @@ The project demonstrates a layered backend architecture using **Spring Boot, Spr
 
 The application follows a layered backend architecture:
 
-```text
+```
 
 Client
   │
@@ -65,7 +65,7 @@ MySQL Database
 
 ## 📁 Project Structure
 
-```text
+```
 src/
 └── main/
     ├── java/
@@ -79,6 +79,7 @@ src/
     └── resources/
         └── application.properties
 
+```
 ---
 
 ## 📌 API Endpoints
